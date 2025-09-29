@@ -119,7 +119,7 @@ export default function Explore({ data, labels, palette }) {
         selectedSet.has(row.index) ? 3 : 1.5
       );
 
-      return {
+      const trace = {
         type: "scattergl",
         mode: "markers",
         name: clusterLabel,
@@ -145,8 +145,23 @@ export default function Explore({ data, labels, palette }) {
           "Ball: %{customdata[1]}<br>" +
           "Family: %{customdata[2]}" +
           "<extra></extra>",
-        selectedpoints,
+        unselected: {
+          marker: {
+            opacity: 1,
+            line: { color: "rgba(15,23,42,0.45)", width: 1.5 },
+          },
+        },
+        selected: {
+          marker: {
+            opacity: 1,
+            line: { color: "rgba(15,23,42,0.65)", width: 3 },
+          },
+        },
       };
+      if (selectedpoints.length > 0) {
+        trace.selectedpoints = selectedpoints;
+      }
+      return trace;
     });
   }, [filteredPoints, clusterMeta, selectedPoints]);
 
