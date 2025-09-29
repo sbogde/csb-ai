@@ -44,6 +44,16 @@ export default function App() {
     };
   }, []);
 
+  useEffect(() => {
+    if (!runTour) {
+      return;
+    }
+    const exploreSection = document.getElementById('explore');
+    if (exploreSection) {
+      exploreSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }, [runTour]);
+
   return (
     <div className="app">
       <Tour run={runTour} onClose={() => setRunTour(false)} />

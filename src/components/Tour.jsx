@@ -4,7 +4,8 @@ const steps = [
   {
     target: '.explore__plot',
     title: 'Interactive map',
-    content: 'Each dot is a small patch of carving.'
+    content: 'Each dot is a small patch of carving.',
+    disableBeacon: true
   },
   {
     target: '.explore__legend',
