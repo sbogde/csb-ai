@@ -1,16 +1,14 @@
 import Papa from 'papaparse';
 
 const COLOR_CYCLE = [
-  '#636efa',
-  '#EF553B',
-  '#00cc96',
-  '#ab63fa',
-  '#FFA15A',
-  '#19d3f3',
-  '#FF6692',
-  '#B6E880',
-  '#FF97FF',
-  '#FECB52'
+  '#1d4ed8',
+  '#b91c1c',
+  '#059669',
+  '#7c3aed',
+  '#ea580c',
+  '#0f766e',
+  '#facc15',
+  '#111827'
 ];
 
 async function fetchText(path) {

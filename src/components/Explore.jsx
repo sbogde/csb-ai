@@ -34,6 +34,7 @@ export default function Explore({ data, labels, palette }) {
   );
   const [ballFilter, setBallFilter] = useState("all");
   const [selectedPoints, setSelectedPoints] = useState([]);
+  const [hoveredPoint, setHoveredPoint] = useState(null);
 
   useEffect(() => {
     setActiveClusters((prev) => {
@@ -127,9 +128,10 @@ export default function Explore({ data, labels, palette }) {
           size: markerSizes,
           opacity: 1,
           line: {
-            color: rows.map(() => "rgba(0,0,0,0.25)"),
+            color: rows.map(() => "rgba(15,23,42,0.45)"),
             width: markerLines,
           },
+          symbol: rows.map(() => "circle"),
         },
         x: rows.map((row) => row.x),
         y: rows.map((row) => row.y),
@@ -141,8 +143,7 @@ export default function Explore({ data, labels, palette }) {
         ]),
         hovertemplate:
           "Ball: %{customdata[1]}<br>" +
-          "Family: %{customdata[2]}<br>" +
-          '<img src="%{customdata[3]}" style="width:96px;height:96px;border-radius:6px;margin-top:6px;" />' +
+          "Family: %{customdata[2]}" +
           "<extra></extra>",
         selectedpoints,
       };
@@ -182,6 +183,20 @@ export default function Explore({ data, labels, palette }) {
     return selectedPoints.map((idx) => map.get(idx)).filter(Boolean);
   }, [points, selectedPoints]);
 
+  const handleHover = (event) => {
+    const point = event?.points?.[0];
+    if (!point || !Array.isArray(point.customdata)) {
+      setHoveredPoint(null);
+      return;
+    }
+    const [, ball, clusterLabel, thumb] = point.customdata;
+    setHoveredPoint({ ball, clusterLabel, thumb });
+  };
+
+  const handleUnhover = () => {
+    setHoveredPoint(null);
+  };
+
   const layout = useMemo(
     () => ({
       autosize: true,
@@ -208,6 +223,7 @@ export default function Explore({ data, labels, palette }) {
         showticklabels: false,
         gridcolor: "#eceff3",
       },
+      template: null,
     }),
     []
   );
@@ -237,7 +253,21 @@ export default function Explore({ data, labels, palette }) {
                 style={{ width: "100%", height: "560px" }}
                 config={{ displayModeBar: true, responsive: true }}
                 onClick={handlePointClick}
+                onHover={handleHover}
+                onUnhover={handleUnhover}
               />
+            )}
+            {hoveredPoint && (
+              <div className="explore__hover-preview">
+                <img
+                  src={hoveredPoint.thumb}
+                  alt={`Patch preview from ${hoveredPoint.ball}`}
+                />
+                <div>
+                  <p className="muted">Ball: {hoveredPoint.ball}</p>
+                  <p className="muted">Family: {hoveredPoint.clusterLabel}</p>
+                </div>
+              </div>
             )}
           </div>
           <aside className="explore__sidebar" aria-label="Explore controls">

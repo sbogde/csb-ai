@@ -173,6 +173,7 @@ a:hover {
 .explore__plot {
   flex: 1 1 600px;
   min-width: 0;
+  position: relative;
 }
 
 .explore__sidebar {
@@ -220,6 +221,28 @@ a:hover {
   border-radius: 8px;
   border: 1px solid #cbd5f5;
   font-size: 0.95rem;
+}
+
+.explore__hover-preview {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 12px 14px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.15);
+  pointer-events: none;
+}
+
+.explore__hover-preview img {
+  width: 96px;
+  height: 96px;
+  border-radius: 10px;
+  object-fit: cover;
+  border: 1px solid rgba(148, 163, 184, 0.4);
 }
 
 .explore__compare {
