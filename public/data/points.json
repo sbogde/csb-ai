@@ -1,0 +1,1346 @@
+[
+  {
+    "x": 7.2800465,
+    "y": 8.337931,
+    "cluster": 3,
+    "ball": "csb_1.jpg",
+    "thumb": "/thumbs/patch_0000.jpg"
+  },
+  {
+    "x": 5.4495707,
+    "y": 8.891172,
+    "cluster": 0,
+    "ball": "csb_1.jpg",
+    "thumb": "/thumbs/patch_0001.jpg"
+  },
+  {
+    "x": 6.6869016,
+    "y": 8.845627,
+    "cluster": 3,
+    "ball": "csb_1.jpg",
+    "thumb": "/thumbs/patch_0002.jpg"
+  },
+  {
+    "x": 6.8685913,
+    "y": 8.724453,
+    "cluster": 3,
+    "ball": "csb_1.jpg",
+    "thumb": "/thumbs/patch_0003.jpg"
+  },
+  {
+    "x": 5.394111,
+    "y": 8.991817,
+    "cluster": 0,
+    "ball": "csb_1.jpg",
+    "thumb": "/thumbs/patch_0004.jpg"
+  },
+  {
+    "x": 5.4251842,
+    "y": 9.200257,
+    "cluster": 0,
+    "ball": "csb_1.jpg",
+    "thumb": "/thumbs/patch_0005.jpg"
+  },
+  {
+    "x": 6.504503,
+    "y": 8.706524,
+    "cluster": 3,
+    "ball": "csb_1.jpg",
+    "thumb": "/thumbs/patch_0006.jpg"
+  },
+  {
+    "x": 5.4256196,
+    "y": 9.227492,
+    "cluster": 0,
+    "ball": "csb_1.jpg",
+    "thumb": "/thumbs/patch_0007.jpg"
+  },
+  {
+    "x": 6.4243097,
+    "y": 8.422795,
+    "cluster": 3,
+    "ball": "csb_10.jpg",
+    "thumb": "/thumbs/patch_0008.jpg"
+  },
+  {
+    "x": 4.7455416,
+    "y": 7.4309616,
+    "cluster": 5,
+    "ball": "csb_10.jpg",
+    "thumb": "/thumbs/patch_0009.jpg"
+  },
+  {
+    "x": 6.142292,
+    "y": 7.985931,
+    "cluster": 3,
+    "ball": "csb_10.jpg",
+    "thumb": "/thumbs/patch_0010.jpg"
+  },
+  {
+    "x": 4.819722,
+    "y": 7.3120394,
+    "cluster": 5,
+    "ball": "csb_10.jpg",
+    "thumb": "/thumbs/patch_0011.jpg"
+  },
+  {
+    "x": 4.760772,
+    "y": 7.835449,
+    "cluster": 5,
+    "ball": "csb_10.jpg",
+    "thumb": "/thumbs/patch_0012.jpg"
+  },
+  {
+    "x": 6.0502625,
+    "y": 8.154328,
+    "cluster": 3,
+    "ball": "csb_10.jpg",
+    "thumb": "/thumbs/patch_0013.jpg"
+  },
+  {
+    "x": 4.952772,
+    "y": 7.406534,
+    "cluster": 5,
+    "ball": "csb_10.jpg",
+    "thumb": "/thumbs/patch_0014.jpg"
+  },
+  {
+    "x": 9.006629,
+    "y": 6.6366663,
+    "cluster": 4,
+    "ball": "csb_10.jpg",
+    "thumb": "/thumbs/patch_0015.jpg"
+  },
+  {
+    "x": 9.407216,
+    "y": 9.021124,
+    "cluster": 2,
+    "ball": "csb_11.jpg",
+    "thumb": "/thumbs/patch_0016.jpg"
+  },
+  {
+    "x": 7.8626094,
+    "y": 8.779458,
+    "cluster": 3,
+    "ball": "csb_11.jpg",
+    "thumb": "/thumbs/patch_0017.jpg"
+  },
+  {
+    "x": 9.507313,
+    "y": 8.8624735,
+    "cluster": 2,
+    "ball": "csb_11.jpg",
+    "thumb": "/thumbs/patch_0018.jpg"
+  },
+  {
+    "x": 9.409542,
+    "y": 9.101819,
+    "cluster": 2,
+    "ball": "csb_11.jpg",
+    "thumb": "/thumbs/patch_0019.jpg"
+  },
+  {
+    "x": 9.359171,
+    "y": 9.21627,
+    "cluster": 2,
+    "ball": "csb_11.jpg",
+    "thumb": "/thumbs/patch_0020.jpg"
+  },
+  {
+    "x": 9.362756,
+    "y": 9.100958,
+    "cluster": 2,
+    "ball": "csb_11.jpg",
+    "thumb": "/thumbs/patch_0021.jpg"
+  },
+  {
+    "x": 9.494744,
+    "y": 8.87471,
+    "cluster": 2,
+    "ball": "csb_11.jpg",
+    "thumb": "/thumbs/patch_0022.jpg"
+  },
+  {
+    "x": 9.187713,
+    "y": 9.011736,
+    "cluster": 2,
+    "ball": "csb_11.jpg",
+    "thumb": "/thumbs/patch_0023.jpg"
+  },
+  {
+    "x": 9.886634,
+    "y": 6.7222166,
+    "cluster": 4,
+    "ball": "csb_12.jpg",
+    "thumb": "/thumbs/patch_0024.jpg"
+  },
+  {
+    "x": 9.981233,
+    "y": 6.6490355,
+    "cluster": 4,
+    "ball": "csb_12.jpg",
+    "thumb": "/thumbs/patch_0025.jpg"
+  },
+  {
+    "x": 7.5341673,
+    "y": 6.5058827,
+    "cluster": 1,
+    "ball": "csb_12.jpg",
+    "thumb": "/thumbs/patch_0026.jpg"
+  },
+  {
+    "x": 7.2795725,
+    "y": 6.640283,
+    "cluster": 1,
+    "ball": "csb_12.jpg",
+    "thumb": "/thumbs/patch_0027.jpg"
+  },
+  {
+    "x": 6.9257107,
+    "y": 6.324333,
+    "cluster": 1,
+    "ball": "csb_12.jpg",
+    "thumb": "/thumbs/patch_0028.jpg"
+  },
+  {
+    "x": 6.998477,
+    "y": 6.501774,
+    "cluster": 1,
+    "ball": "csb_12.jpg",
+    "thumb": "/thumbs/patch_0029.jpg"
+  },
+  {
+    "x": 6.2991877,
+    "y": 6.196788,
+    "cluster": 1,
+    "ball": "csb_12.jpg",
+    "thumb": "/thumbs/patch_0030.jpg"
+  },
+  {
+    "x": 6.223013,
+    "y": 6.230558,
+    "cluster": 1,
+    "ball": "csb_12.jpg",
+    "thumb": "/thumbs/patch_0031.jpg"
+  },
+  {
+    "x": 5.1426663,
+    "y": 8.297345,
+    "cluster": 5,
+    "ball": "csb_13.jpg",
+    "thumb": "/thumbs/patch_0032.jpg"
+  },
+  {
+    "x": 4.5621204,
+    "y": 7.9883866,
+    "cluster": 5,
+    "ball": "csb_13.jpg",
+    "thumb": "/thumbs/patch_0033.jpg"
+  },
+  {
+    "x": 5.2388577,
+    "y": 6.944817,
+    "cluster": 5,
+    "ball": "csb_13.jpg",
+    "thumb": "/thumbs/patch_0034.jpg"
+  },
+  {
+    "x": 4.9766245,
+    "y": 7.304664,
+    "cluster": 5,
+    "ball": "csb_13.jpg",
+    "thumb": "/thumbs/patch_0035.jpg"
+  },
+  {
+    "x": 6.0106587,
+    "y": 6.825986,
+    "cluster": 1,
+    "ball": "csb_13.jpg",
+    "thumb": "/thumbs/patch_0036.jpg"
+  },
+  {
+    "x": 5.4181976,
+    "y": 6.9747987,
+    "cluster": 5,
+    "ball": "csb_13.jpg",
+    "thumb": "/thumbs/patch_0037.jpg"
+  },
+  {
+    "x": 4.4426913,
+    "y": 7.7897415,
+    "cluster": 5,
+    "ball": "csb_13.jpg",
+    "thumb": "/thumbs/patch_0038.jpg"
+  },
+  {
+    "x": 5.0331144,
+    "y": 7.1065574,
+    "cluster": 5,
+    "ball": "csb_13.jpg",
+    "thumb": "/thumbs/patch_0039.jpg"
+  },
+  {
+    "x": 6.2292743,
+    "y": 9.625825,
+    "cluster": 0,
+    "ball": "csb_14.jpg",
+    "thumb": "/thumbs/patch_0040.jpg"
+  },
+  {
+    "x": 5.346575,
+    "y": 9.651948,
+    "cluster": 0,
+    "ball": "csb_14.jpg",
+    "thumb": "/thumbs/patch_0041.jpg"
+  },
+  {
+    "x": 6.0846133,
+    "y": 9.577374,
+    "cluster": 0,
+    "ball": "csb_14.jpg",
+    "thumb": "/thumbs/patch_0042.jpg"
+  },
+  {
+    "x": 6.3944926,
+    "y": 9.51767,
+    "cluster": 0,
+    "ball": "csb_14.jpg",
+    "thumb": "/thumbs/patch_0043.jpg"
+  },
+  {
+    "x": 5.698675,
+    "y": 9.5942955,
+    "cluster": 0,
+    "ball": "csb_14.jpg",
+    "thumb": "/thumbs/patch_0044.jpg"
+  },
+  {
+    "x": 5.467757,
+    "y": 7.673602,
+    "cluster": 5,
+    "ball": "csb_14.jpg",
+    "thumb": "/thumbs/patch_0045.jpg"
+  },
+  {
+    "x": 6.618615,
+    "y": 9.391497,
+    "cluster": 0,
+    "ball": "csb_14.jpg",
+    "thumb": "/thumbs/patch_0046.jpg"
+  },
+  {
+    "x": 5.414224,
+    "y": 9.582158,
+    "cluster": 0,
+    "ball": "csb_14.jpg",
+    "thumb": "/thumbs/patch_0047.jpg"
+  },
+  {
+    "x": 5.752292,
+    "y": 7.0228534,
+    "cluster": 5,
+    "ball": "csb_15.jpg",
+    "thumb": "/thumbs/patch_0048.jpg"
+  },
+  {
+    "x": 6.286928,
+    "y": 6.7480345,
+    "cluster": 1,
+    "ball": "csb_15.jpg",
+    "thumb": "/thumbs/patch_0049.jpg"
+  },
+  {
+    "x": 5.5905275,
+    "y": 7.3334455,
+    "cluster": 5,
+    "ball": "csb_15.jpg",
+    "thumb": "/thumbs/patch_0050.jpg"
+  },
+  {
+    "x": 6.1331954,
+    "y": 7.540352,
+    "cluster": 3,
+    "ball": "csb_15.jpg",
+    "thumb": "/thumbs/patch_0051.jpg"
+  },
+  {
+    "x": 6.353185,
+    "y": 7.5745597,
+    "cluster": 3,
+    "ball": "csb_15.jpg",
+    "thumb": "/thumbs/patch_0052.jpg"
+  },
+  {
+    "x": 8.279642,
+    "y": 6.576467,
+    "cluster": 4,
+    "ball": "csb_15.jpg",
+    "thumb": "/thumbs/patch_0053.jpg"
+  },
+  {
+    "x": 10.336628,
+    "y": 6.4931273,
+    "cluster": 4,
+    "ball": "csb_15.jpg",
+    "thumb": "/thumbs/patch_0054.jpg"
+  },
+  {
+    "x": 10.3003,
+    "y": 6.4358516,
+    "cluster": 4,
+    "ball": "csb_15.jpg",
+    "thumb": "/thumbs/patch_0055.jpg"
+  },
+  {
+    "x": 6.966429,
+    "y": 6.298728,
+    "cluster": 1,
+    "ball": "csb_16.jpg",
+    "thumb": "/thumbs/patch_0056.jpg"
+  },
+  {
+    "x": 6.8187885,
+    "y": 5.941693,
+    "cluster": 1,
+    "ball": "csb_16.jpg",
+    "thumb": "/thumbs/patch_0057.jpg"
+  },
+  {
+    "x": 7.6124086,
+    "y": 6.730295,
+    "cluster": 1,
+    "ball": "csb_16.jpg",
+    "thumb": "/thumbs/patch_0058.jpg"
+  },
+  {
+    "x": 7.647813,
+    "y": 6.8063474,
+    "cluster": 1,
+    "ball": "csb_16.jpg",
+    "thumb": "/thumbs/patch_0059.jpg"
+  },
+  {
+    "x": 7.5230985,
+    "y": 5.463801,
+    "cluster": 1,
+    "ball": "csb_16.jpg",
+    "thumb": "/thumbs/patch_0060.jpg"
+  },
+  {
+    "x": 9.884137,
+    "y": 7.9924545,
+    "cluster": 2,
+    "ball": "csb_16.jpg",
+    "thumb": "/thumbs/patch_0061.jpg"
+  },
+  {
+    "x": 7.488574,
+    "y": 5.6101537,
+    "cluster": 1,
+    "ball": "csb_16.jpg",
+    "thumb": "/thumbs/patch_0062.jpg"
+  },
+  {
+    "x": 9.616413,
+    "y": 7.178367,
+    "cluster": 4,
+    "ball": "csb_16.jpg",
+    "thumb": "/thumbs/patch_0063.jpg"
+  },
+  {
+    "x": 7.197919,
+    "y": 7.1842833,
+    "cluster": 3,
+    "ball": "csb_17.jpg",
+    "thumb": "/thumbs/patch_0064.jpg"
+  },
+  {
+    "x": 6.9206257,
+    "y": 7.385342,
+    "cluster": 3,
+    "ball": "csb_17.jpg",
+    "thumb": "/thumbs/patch_0065.jpg"
+  },
+  {
+    "x": 7.2847996,
+    "y": 7.4767356,
+    "cluster": 3,
+    "ball": "csb_17.jpg",
+    "thumb": "/thumbs/patch_0066.jpg"
+  },
+  {
+    "x": 7.2472215,
+    "y": 7.6176877,
+    "cluster": 3,
+    "ball": "csb_17.jpg",
+    "thumb": "/thumbs/patch_0067.jpg"
+  },
+  {
+    "x": 6.9854436,
+    "y": 7.1912336,
+    "cluster": 3,
+    "ball": "csb_17.jpg",
+    "thumb": "/thumbs/patch_0068.jpg"
+  },
+  {
+    "x": 7.0475183,
+    "y": 7.1197186,
+    "cluster": 3,
+    "ball": "csb_17.jpg",
+    "thumb": "/thumbs/patch_0069.jpg"
+  },
+  {
+    "x": 9.376944,
+    "y": 6.996552,
+    "cluster": 4,
+    "ball": "csb_17.jpg",
+    "thumb": "/thumbs/patch_0070.jpg"
+  },
+  {
+    "x": 9.330995,
+    "y": 6.88263,
+    "cluster": 4,
+    "ball": "csb_17.jpg",
+    "thumb": "/thumbs/patch_0071.jpg"
+  },
+  {
+    "x": 7.8636513,
+    "y": 5.8200445,
+    "cluster": 1,
+    "ball": "csb_18.jpg",
+    "thumb": "/thumbs/patch_0072.jpg"
+  },
+  {
+    "x": 7.7120028,
+    "y": 5.6641283,
+    "cluster": 1,
+    "ball": "csb_18.jpg",
+    "thumb": "/thumbs/patch_0073.jpg"
+  },
+  {
+    "x": 6.5376935,
+    "y": 6.355511,
+    "cluster": 1,
+    "ball": "csb_18.jpg",
+    "thumb": "/thumbs/patch_0074.jpg"
+  },
+  {
+    "x": 8.101912,
+    "y": 5.777405,
+    "cluster": 1,
+    "ball": "csb_18.jpg",
+    "thumb": "/thumbs/patch_0075.jpg"
+  },
+  {
+    "x": 6.7910285,
+    "y": 6.169465,
+    "cluster": 1,
+    "ball": "csb_18.jpg",
+    "thumb": "/thumbs/patch_0076.jpg"
+  },
+  {
+    "x": 6.411212,
+    "y": 6.2758794,
+    "cluster": 1,
+    "ball": "csb_18.jpg",
+    "thumb": "/thumbs/patch_0077.jpg"
+  },
+  {
+    "x": 6.298225,
+    "y": 6.2633834,
+    "cluster": 1,
+    "ball": "csb_18.jpg",
+    "thumb": "/thumbs/patch_0078.jpg"
+  },
+  {
+    "x": 7.4894466,
+    "y": 5.750504,
+    "cluster": 1,
+    "ball": "csb_18.jpg",
+    "thumb": "/thumbs/patch_0079.jpg"
+  },
+  {
+    "x": 8.079141,
+    "y": 6.057048,
+    "cluster": 1,
+    "ball": "csb_19.jpg",
+    "thumb": "/thumbs/patch_0080.jpg"
+  },
+  {
+    "x": 8.14267,
+    "y": 5.8410406,
+    "cluster": 1,
+    "ball": "csb_19.jpg",
+    "thumb": "/thumbs/patch_0081.jpg"
+  },
+  {
+    "x": 8.061702,
+    "y": 5.8262024,
+    "cluster": 1,
+    "ball": "csb_19.jpg",
+    "thumb": "/thumbs/patch_0082.jpg"
+  },
+  {
+    "x": 6.953444,
+    "y": 5.3025937,
+    "cluster": 1,
+    "ball": "csb_19.jpg",
+    "thumb": "/thumbs/patch_0083.jpg"
+  },
+  {
+    "x": 6.814868,
+    "y": 5.3556566,
+    "cluster": 1,
+    "ball": "csb_19.jpg",
+    "thumb": "/thumbs/patch_0084.jpg"
+  },
+  {
+    "x": 9.062408,
+    "y": 6.419963,
+    "cluster": 4,
+    "ball": "csb_19.jpg",
+    "thumb": "/thumbs/patch_0085.jpg"
+  },
+  {
+    "x": 6.960436,
+    "y": 5.284979,
+    "cluster": 1,
+    "ball": "csb_19.jpg",
+    "thumb": "/thumbs/patch_0086.jpg"
+  },
+  {
+    "x": 6.8995256,
+    "y": 5.1852136,
+    "cluster": 1,
+    "ball": "csb_19.jpg",
+    "thumb": "/thumbs/patch_0087.jpg"
+  },
+  {
+    "x": 7.0116043,
+    "y": 5.6491814,
+    "cluster": 1,
+    "ball": "csb_2.jpg",
+    "thumb": "/thumbs/patch_0088.jpg"
+  },
+  {
+    "x": 6.861163,
+    "y": 5.7874227,
+    "cluster": 1,
+    "ball": "csb_2.jpg",
+    "thumb": "/thumbs/patch_0089.jpg"
+  },
+  {
+    "x": 6.8190303,
+    "y": 6.2130117,
+    "cluster": 1,
+    "ball": "csb_2.jpg",
+    "thumb": "/thumbs/patch_0090.jpg"
+  },
+  {
+    "x": 7.306465,
+    "y": 5.437674,
+    "cluster": 1,
+    "ball": "csb_2.jpg",
+    "thumb": "/thumbs/patch_0091.jpg"
+  },
+  {
+    "x": 7.423324,
+    "y": 5.481244,
+    "cluster": 1,
+    "ball": "csb_2.jpg",
+    "thumb": "/thumbs/patch_0092.jpg"
+  },
+  {
+    "x": 6.5825286,
+    "y": 6.253996,
+    "cluster": 1,
+    "ball": "csb_2.jpg",
+    "thumb": "/thumbs/patch_0093.jpg"
+  },
+  {
+    "x": 7.7712374,
+    "y": 5.544307,
+    "cluster": 1,
+    "ball": "csb_2.jpg",
+    "thumb": "/thumbs/patch_0094.jpg"
+  },
+  {
+    "x": 8.198681,
+    "y": 6.181458,
+    "cluster": 1,
+    "ball": "csb_2.jpg",
+    "thumb": "/thumbs/patch_0095.jpg"
+  },
+  {
+    "x": 5.515646,
+    "y": 9.992402,
+    "cluster": 0,
+    "ball": "csb_20.jpg",
+    "thumb": "/thumbs/patch_0096.jpg"
+  },
+  {
+    "x": 5.3044558,
+    "y": 10.054791,
+    "cluster": 0,
+    "ball": "csb_20.jpg",
+    "thumb": "/thumbs/patch_0097.jpg"
+  },
+  {
+    "x": 5.409402,
+    "y": 10.258521,
+    "cluster": 0,
+    "ball": "csb_20.jpg",
+    "thumb": "/thumbs/patch_0098.jpg"
+  },
+  {
+    "x": 5.4959235,
+    "y": 10.067223,
+    "cluster": 0,
+    "ball": "csb_20.jpg",
+    "thumb": "/thumbs/patch_0099.jpg"
+  },
+  {
+    "x": 5.442464,
+    "y": 10.210106,
+    "cluster": 0,
+    "ball": "csb_20.jpg",
+    "thumb": "/thumbs/patch_0100.jpg"
+  },
+  {
+    "x": 5.2911873,
+    "y": 9.941817,
+    "cluster": 0,
+    "ball": "csb_20.jpg",
+    "thumb": "/thumbs/patch_0101.jpg"
+  },
+  {
+    "x": 5.362648,
+    "y": 9.951686,
+    "cluster": 0,
+    "ball": "csb_20.jpg",
+    "thumb": "/thumbs/patch_0102.jpg"
+  },
+  {
+    "x": 5.4178696,
+    "y": 10.3017845,
+    "cluster": 0,
+    "ball": "csb_20.jpg",
+    "thumb": "/thumbs/patch_0103.jpg"
+  },
+  {
+    "x": 5.9239254,
+    "y": 8.901673,
+    "cluster": 0,
+    "ball": "csb_21.jpg",
+    "thumb": "/thumbs/patch_0104.jpg"
+  },
+  {
+    "x": 5.8502364,
+    "y": 9.008233,
+    "cluster": 0,
+    "ball": "csb_21.jpg",
+    "thumb": "/thumbs/patch_0105.jpg"
+  },
+  {
+    "x": 6.1243606,
+    "y": 8.789879,
+    "cluster": 0,
+    "ball": "csb_21.jpg",
+    "thumb": "/thumbs/patch_0106.jpg"
+  },
+  {
+    "x": 5.9385586,
+    "y": 8.952113,
+    "cluster": 0,
+    "ball": "csb_21.jpg",
+    "thumb": "/thumbs/patch_0107.jpg"
+  },
+  {
+    "x": 9.385176,
+    "y": 6.5460134,
+    "cluster": 4,
+    "ball": "csb_21.jpg",
+    "thumb": "/thumbs/patch_0108.jpg"
+  },
+  {
+    "x": 9.408014,
+    "y": 6.381125,
+    "cluster": 4,
+    "ball": "csb_21.jpg",
+    "thumb": "/thumbs/patch_0109.jpg"
+  },
+  {
+    "x": 9.508076,
+    "y": 6.472827,
+    "cluster": 4,
+    "ball": "csb_21.jpg",
+    "thumb": "/thumbs/patch_0110.jpg"
+  },
+  {
+    "x": 9.424235,
+    "y": 6.3692884,
+    "cluster": 4,
+    "ball": "csb_21.jpg",
+    "thumb": "/thumbs/patch_0111.jpg"
+  },
+  {
+    "x": 8.574057,
+    "y": 8.313094,
+    "cluster": 2,
+    "ball": "csb_22.jpg",
+    "thumb": "/thumbs/patch_0112.jpg"
+  },
+  {
+    "x": 8.107441,
+    "y": 8.608655,
+    "cluster": 3,
+    "ball": "csb_22.jpg",
+    "thumb": "/thumbs/patch_0113.jpg"
+  },
+  {
+    "x": 9.324513,
+    "y": 7.485688,
+    "cluster": 4,
+    "ball": "csb_22.jpg",
+    "thumb": "/thumbs/patch_0114.jpg"
+  },
+  {
+    "x": 9.386932,
+    "y": 7.507415,
+    "cluster": 4,
+    "ball": "csb_22.jpg",
+    "thumb": "/thumbs/patch_0115.jpg"
+  },
+  {
+    "x": 8.542787,
+    "y": 8.406851,
+    "cluster": 2,
+    "ball": "csb_22.jpg",
+    "thumb": "/thumbs/patch_0116.jpg"
+  },
+  {
+    "x": 8.733066,
+    "y": 8.475844,
+    "cluster": 2,
+    "ball": "csb_22.jpg",
+    "thumb": "/thumbs/patch_0117.jpg"
+  },
+  {
+    "x": 8.701685,
+    "y": 8.303539,
+    "cluster": 2,
+    "ball": "csb_22.jpg",
+    "thumb": "/thumbs/patch_0118.jpg"
+  },
+  {
+    "x": 9.501306,
+    "y": 7.647468,
+    "cluster": 4,
+    "ball": "csb_22.jpg",
+    "thumb": "/thumbs/patch_0119.jpg"
+  },
+  {
+    "x": 7.5689583,
+    "y": 7.6024933,
+    "cluster": 3,
+    "ball": "csb_23.jpg",
+    "thumb": "/thumbs/patch_0120.jpg"
+  },
+  {
+    "x": 9.370562,
+    "y": 7.5707145,
+    "cluster": 4,
+    "ball": "csb_23.jpg",
+    "thumb": "/thumbs/patch_0121.jpg"
+  },
+  {
+    "x": 9.137067,
+    "y": 7.681231,
+    "cluster": 2,
+    "ball": "csb_23.jpg",
+    "thumb": "/thumbs/patch_0122.jpg"
+  },
+  {
+    "x": 9.285093,
+    "y": 7.391983,
+    "cluster": 4,
+    "ball": "csb_23.jpg",
+    "thumb": "/thumbs/patch_0123.jpg"
+  },
+  {
+    "x": 8.996439,
+    "y": 9.1321125,
+    "cluster": 2,
+    "ball": "csb_23.jpg",
+    "thumb": "/thumbs/patch_0124.jpg"
+  },
+  {
+    "x": 6.543758,
+    "y": 8.501028,
+    "cluster": 3,
+    "ball": "csb_23.jpg",
+    "thumb": "/thumbs/patch_0125.jpg"
+  },
+  {
+    "x": 7.9734044,
+    "y": 7.4231367,
+    "cluster": 3,
+    "ball": "csb_23.jpg",
+    "thumb": "/thumbs/patch_0126.jpg"
+  },
+  {
+    "x": 7.7129035,
+    "y": 8.970687,
+    "cluster": 3,
+    "ball": "csb_23.jpg",
+    "thumb": "/thumbs/patch_0127.jpg"
+  },
+  {
+    "x": 9.798215,
+    "y": 8.444549,
+    "cluster": 2,
+    "ball": "csb_24.jpg",
+    "thumb": "/thumbs/patch_0128.jpg"
+  },
+  {
+    "x": 9.759321,
+    "y": 8.362591,
+    "cluster": 2,
+    "ball": "csb_24.jpg",
+    "thumb": "/thumbs/patch_0129.jpg"
+  },
+  {
+    "x": 9.633008,
+    "y": 8.4005,
+    "cluster": 2,
+    "ball": "csb_24.jpg",
+    "thumb": "/thumbs/patch_0130.jpg"
+  },
+  {
+    "x": 8.802961,
+    "y": 8.738998,
+    "cluster": 2,
+    "ball": "csb_24.jpg",
+    "thumb": "/thumbs/patch_0131.jpg"
+  },
+  {
+    "x": 8.898724,
+    "y": 8.626207,
+    "cluster": 2,
+    "ball": "csb_24.jpg",
+    "thumb": "/thumbs/patch_0132.jpg"
+  },
+  {
+    "x": 9.780762,
+    "y": 7.997504,
+    "cluster": 2,
+    "ball": "csb_24.jpg",
+    "thumb": "/thumbs/patch_0133.jpg"
+  },
+  {
+    "x": 9.886611,
+    "y": 7.8682804,
+    "cluster": 2,
+    "ball": "csb_24.jpg",
+    "thumb": "/thumbs/patch_0134.jpg"
+  },
+  {
+    "x": 9.948297,
+    "y": 7.897901,
+    "cluster": 2,
+    "ball": "csb_24.jpg",
+    "thumb": "/thumbs/patch_0135.jpg"
+  },
+  {
+    "x": 4.3333178,
+    "y": 7.545337,
+    "cluster": 5,
+    "ball": "csb_3.jpg",
+    "thumb": "/thumbs/patch_0136.jpg"
+  },
+  {
+    "x": 4.257676,
+    "y": 7.9676266,
+    "cluster": 5,
+    "ball": "csb_3.jpg",
+    "thumb": "/thumbs/patch_0137.jpg"
+  },
+  {
+    "x": 4.188215,
+    "y": 8.069708,
+    "cluster": 5,
+    "ball": "csb_3.jpg",
+    "thumb": "/thumbs/patch_0138.jpg"
+  },
+  {
+    "x": 4.6738234,
+    "y": 7.307214,
+    "cluster": 5,
+    "ball": "csb_3.jpg",
+    "thumb": "/thumbs/patch_0139.jpg"
+  },
+  {
+    "x": 4.592156,
+    "y": 8.615924,
+    "cluster": 5,
+    "ball": "csb_3.jpg",
+    "thumb": "/thumbs/patch_0140.jpg"
+  },
+  {
+    "x": 5.294551,
+    "y": 8.840302,
+    "cluster": 0,
+    "ball": "csb_3.jpg",
+    "thumb": "/thumbs/patch_0141.jpg"
+  },
+  {
+    "x": 4.6036663,
+    "y": 8.255859,
+    "cluster": 5,
+    "ball": "csb_3.jpg",
+    "thumb": "/thumbs/patch_0142.jpg"
+  },
+  {
+    "x": 4.2898006,
+    "y": 7.8934493,
+    "cluster": 5,
+    "ball": "csb_3.jpg",
+    "thumb": "/thumbs/patch_0143.jpg"
+  },
+  {
+    "x": 3.5556395,
+    "y": 8.593186,
+    "cluster": 5,
+    "ball": "csb_4.jpg",
+    "thumb": "/thumbs/patch_0144.jpg"
+  },
+  {
+    "x": 3.7616827,
+    "y": 8.3881645,
+    "cluster": 5,
+    "ball": "csb_4.jpg",
+    "thumb": "/thumbs/patch_0145.jpg"
+  },
+  {
+    "x": 3.6563995,
+    "y": 8.491082,
+    "cluster": 5,
+    "ball": "csb_4.jpg",
+    "thumb": "/thumbs/patch_0146.jpg"
+  },
+  {
+    "x": 3.6471744,
+    "y": 8.535159,
+    "cluster": 5,
+    "ball": "csb_4.jpg",
+    "thumb": "/thumbs/patch_0147.jpg"
+  },
+  {
+    "x": 3.6801133,
+    "y": 8.506368,
+    "cluster": 5,
+    "ball": "csb_4.jpg",
+    "thumb": "/thumbs/patch_0148.jpg"
+  },
+  {
+    "x": 3.8190477,
+    "y": 8.297146,
+    "cluster": 5,
+    "ball": "csb_4.jpg",
+    "thumb": "/thumbs/patch_0149.jpg"
+  },
+  {
+    "x": 3.8974693,
+    "y": 8.324201,
+    "cluster": 5,
+    "ball": "csb_4.jpg",
+    "thumb": "/thumbs/patch_0150.jpg"
+  },
+  {
+    "x": 3.7751267,
+    "y": 8.486422,
+    "cluster": 5,
+    "ball": "csb_4.jpg",
+    "thumb": "/thumbs/patch_0151.jpg"
+  },
+  {
+    "x": 8.720906,
+    "y": 7.374911,
+    "cluster": 4,
+    "ball": "csb_5.jpg",
+    "thumb": "/thumbs/patch_0152.jpg"
+  },
+  {
+    "x": 7.986856,
+    "y": 7.5284863,
+    "cluster": 3,
+    "ball": "csb_5.jpg",
+    "thumb": "/thumbs/patch_0153.jpg"
+  },
+  {
+    "x": 8.115194,
+    "y": 7.5324187,
+    "cluster": 3,
+    "ball": "csb_5.jpg",
+    "thumb": "/thumbs/patch_0154.jpg"
+  },
+  {
+    "x": 8.031385,
+    "y": 7.4967747,
+    "cluster": 3,
+    "ball": "csb_5.jpg",
+    "thumb": "/thumbs/patch_0155.jpg"
+  },
+  {
+    "x": 8.112216,
+    "y": 7.5796595,
+    "cluster": 3,
+    "ball": "csb_5.jpg",
+    "thumb": "/thumbs/patch_0156.jpg"
+  },
+  {
+    "x": 7.95593,
+    "y": 7.3928576,
+    "cluster": 3,
+    "ball": "csb_5.jpg",
+    "thumb": "/thumbs/patch_0157.jpg"
+  },
+  {
+    "x": 9.157931,
+    "y": 7.092148,
+    "cluster": 4,
+    "ball": "csb_5.jpg",
+    "thumb": "/thumbs/patch_0158.jpg"
+  },
+  {
+    "x": 8.084847,
+    "y": 7.3761315,
+    "cluster": 3,
+    "ball": "csb_5.jpg",
+    "thumb": "/thumbs/patch_0159.jpg"
+  },
+  {
+    "x": 7.0206223,
+    "y": 8.881069,
+    "cluster": 3,
+    "ball": "csb_6.jpg",
+    "thumb": "/thumbs/patch_0160.jpg"
+  },
+  {
+    "x": 7.1047873,
+    "y": 8.957664,
+    "cluster": 3,
+    "ball": "csb_6.jpg",
+    "thumb": "/thumbs/patch_0161.jpg"
+  },
+  {
+    "x": 7.0580397,
+    "y": 8.798871,
+    "cluster": 3,
+    "ball": "csb_6.jpg",
+    "thumb": "/thumbs/patch_0162.jpg"
+  },
+  {
+    "x": 7.3184643,
+    "y": 9.03149,
+    "cluster": 3,
+    "ball": "csb_6.jpg",
+    "thumb": "/thumbs/patch_0163.jpg"
+  },
+  {
+    "x": 7.212231,
+    "y": 9.114207,
+    "cluster": 3,
+    "ball": "csb_6.jpg",
+    "thumb": "/thumbs/patch_0164.jpg"
+  },
+  {
+    "x": 8.50243,
+    "y": 8.8875675,
+    "cluster": 2,
+    "ball": "csb_6.jpg",
+    "thumb": "/thumbs/patch_0165.jpg"
+  },
+  {
+    "x": 8.531018,
+    "y": 9.201653,
+    "cluster": 2,
+    "ball": "csb_6.jpg",
+    "thumb": "/thumbs/patch_0166.jpg"
+  },
+  {
+    "x": 6.339493,
+    "y": 8.093733,
+    "cluster": 3,
+    "ball": "csb_6.jpg",
+    "thumb": "/thumbs/patch_0167.jpg"
+  },
+  {
+    "x": 5.2687407,
+    "y": 7.9055147,
+    "cluster": 5,
+    "ball": "csb_7.jpg",
+    "thumb": "/thumbs/patch_0168.jpg"
+  },
+  {
+    "x": 4.9140553,
+    "y": 8.048324,
+    "cluster": 5,
+    "ball": "csb_7.jpg",
+    "thumb": "/thumbs/patch_0169.jpg"
+  },
+  {
+    "x": 5.0890737,
+    "y": 7.509225,
+    "cluster": 5,
+    "ball": "csb_7.jpg",
+    "thumb": "/thumbs/patch_0170.jpg"
+  },
+  {
+    "x": 5.000676,
+    "y": 7.8202763,
+    "cluster": 5,
+    "ball": "csb_7.jpg",
+    "thumb": "/thumbs/patch_0171.jpg"
+  },
+  {
+    "x": 8.414838,
+    "y": 6.4345565,
+    "cluster": 4,
+    "ball": "csb_7.jpg",
+    "thumb": "/thumbs/patch_0172.jpg"
+  },
+  {
+    "x": 5.894288,
+    "y": 8.056147,
+    "cluster": 5,
+    "ball": "csb_7.jpg",
+    "thumb": "/thumbs/patch_0173.jpg"
+  },
+  {
+    "x": 5.226607,
+    "y": 7.9265976,
+    "cluster": 5,
+    "ball": "csb_7.jpg",
+    "thumb": "/thumbs/patch_0174.jpg"
+  },
+  {
+    "x": 9.101261,
+    "y": 6.809965,
+    "cluster": 4,
+    "ball": "csb_7.jpg",
+    "thumb": "/thumbs/patch_0175.jpg"
+  },
+  {
+    "x": 9.075048,
+    "y": 8.355551,
+    "cluster": 2,
+    "ball": "csb_8.jpg",
+    "thumb": "/thumbs/patch_0176.jpg"
+  },
+  {
+    "x": 9.496592,
+    "y": 8.295378,
+    "cluster": 2,
+    "ball": "csb_8.jpg",
+    "thumb": "/thumbs/patch_0177.jpg"
+  },
+  {
+    "x": 8.633642,
+    "y": 8.65015,
+    "cluster": 2,
+    "ball": "csb_8.jpg",
+    "thumb": "/thumbs/patch_0178.jpg"
+  },
+  {
+    "x": 9.254244,
+    "y": 8.296855,
+    "cluster": 2,
+    "ball": "csb_8.jpg",
+    "thumb": "/thumbs/patch_0179.jpg"
+  },
+  {
+    "x": 9.628627,
+    "y": 8.145951,
+    "cluster": 2,
+    "ball": "csb_8.jpg",
+    "thumb": "/thumbs/patch_0180.jpg"
+  },
+  {
+    "x": 9.487734,
+    "y": 8.152345,
+    "cluster": 2,
+    "ball": "csb_8.jpg",
+    "thumb": "/thumbs/patch_0181.jpg"
+  },
+  {
+    "x": 8.870139,
+    "y": 9.381937,
+    "cluster": 2,
+    "ball": "csb_8.jpg",
+    "thumb": "/thumbs/patch_0182.jpg"
+  },
+  {
+    "x": 9.866877,
+    "y": 7.973614,
+    "cluster": 2,
+    "ball": "csb_8.jpg",
+    "thumb": "/thumbs/patch_0183.jpg"
+  },
+  {
+    "x": 5.465684,
+    "y": 8.603587,
+    "cluster": 0,
+    "ball": "csb_9.jpg",
+    "thumb": "/thumbs/patch_0184.jpg"
+  },
+  {
+    "x": 5.4727697,
+    "y": 8.608226,
+    "cluster": 0,
+    "ball": "csb_9.jpg",
+    "thumb": "/thumbs/patch_0185.jpg"
+  },
+  {
+    "x": 5.5449295,
+    "y": 8.584212,
+    "cluster": 0,
+    "ball": "csb_9.jpg",
+    "thumb": "/thumbs/patch_0186.jpg"
+  },
+  {
+    "x": 5.5169024,
+    "y": 8.504772,
+    "cluster": 0,
+    "ball": "csb_9.jpg",
+    "thumb": "/thumbs/patch_0187.jpg"
+  },
+  {
+    "x": 9.499879,
+    "y": 6.795852,
+    "cluster": 4,
+    "ball": "csb_9.jpg",
+    "thumb": "/thumbs/patch_0188.jpg"
+  },
+  {
+    "x": 9.781862,
+    "y": 6.989225,
+    "cluster": 4,
+    "ball": "csb_9.jpg",
+    "thumb": "/thumbs/patch_0189.jpg"
+  },
+  {
+    "x": 10.290822,
+    "y": 6.4420013,
+    "cluster": 4,
+    "ball": "csb_9.jpg",
+    "thumb": "/thumbs/patch_0190.jpg"
+  },
+  {
+    "x": 10.272589,
+    "y": 6.4070325,
+    "cluster": 4,
+    "ball": "csb_9.jpg",
+    "thumb": "/thumbs/patch_0191.jpg"
+  }
+]
