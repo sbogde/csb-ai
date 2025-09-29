@@ -27,6 +27,3 @@ yarn-error.log*
 # Python helper cache (if invoked in repo)
 __pycache__/
 *.py[cod]
-
-# Generated thumbs & data 
-public/thumbs/
