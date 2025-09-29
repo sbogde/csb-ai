@@ -20,6 +20,22 @@ export default function Credits() {
             archaeological interpretation.
           </p>
         </div>
+        <footer className="credits-footer">
+          <p>
+            © Sorin Bogde ·{' '}
+            <a href="https://www.linkedin.com/in/sbogde/" target="_blank" rel="noreferrer">
+              LinkedIn
+            </a>
+            ·{' '}
+            <a href="https://www.guru.com/freelancers/sorin-bogde/reviews" target="_blank" rel="noreferrer">
+              Guru profile
+            </a>
+            ·{' '}
+            <a href="https://github.com/sbogde/csb-ai" target="_blank" rel="noreferrer">
+              GitHub repository
+            </a>
+          </p>
+        </footer>
       </div>
     </section>
   );
