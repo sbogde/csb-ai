@@ -109,13 +109,13 @@ export default function Explore({ data, labels, palette }) {
       const markerSizes = rows.map((row, idx) => {
         if (selectedSet.has(row.index)) {
           selectedpoints.push(idx);
-          return 10;
+          return 12;
         }
-        return 6;
+        return 10;
       });
 
       const markerLines = rows.map((row) =>
-        selectedSet.has(row.index) ? 2 : 0
+        selectedSet.has(row.index) ? 3 : 1.5
       );
 
       return {
@@ -125,9 +125,9 @@ export default function Explore({ data, labels, palette }) {
         marker: {
           color: rows.map(() => baseColor),
           size: markerSizes,
-          opacity: 0.85,
+          opacity: 1,
           line: {
-            color: rows.map(() => "#0f172a"),
+            color: rows.map(() => "rgba(0,0,0,0.25)"),
             width: markerLines,
           },
         },
@@ -187,10 +187,27 @@ export default function Explore({ data, labels, palette }) {
       autosize: true,
       margin: { l: 40, r: 20, t: 40, b: 40 },
       hovermode: "closest",
-      paper_bgcolor: "rgba(255, 255, 255, 1)",
-      plot_bgcolor: "rgba(255, 255, 255, 1)",
-      xaxis: { title: "UMAP 1", zeroline: false, showticklabels: false },
-      yaxis: { title: "UMAP 2", zeroline: false, showticklabels: false },
+      hoverlabel: {
+        bgcolor: "#ffffff",
+        font: { color: "#111111" },
+      },
+      paper_bgcolor: "#ffffff",
+      plot_bgcolor: "#ffffff",
+      legend: {
+        bgcolor: "rgba(255,255,255,0.9)",
+      },
+      xaxis: {
+        title: "UMAP 1",
+        zeroline: false,
+        showticklabels: false,
+        gridcolor: "#eceff3",
+      },
+      yaxis: {
+        title: "UMAP 2",
+        zeroline: false,
+        showticklabels: false,
+        gridcolor: "#eceff3",
+      },
     }),
     []
   );
