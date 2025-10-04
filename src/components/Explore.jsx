@@ -17,18 +17,20 @@ function sortClusterIds(ids) {
 // Check if admin mode is enabled via URL parameter
 function useAdminMode() {
   const [isAdmin, setIsAdmin] = useState(false);
-  
+
   useEffect(() => {
     // Check both search params and hash params
     const urlParams = new URLSearchParams(window.location.search);
-    const hashParams = new URLSearchParams(window.location.hash.split('?')[1] || '');
-    
-    const adminFromSearch = urlParams.get('admin') === '1';
-    const adminFromHash = hashParams.get('admin') === '1';
-    
+    const hashParams = new URLSearchParams(
+      window.location.hash.split("?")[1] || ""
+    );
+
+    const adminFromSearch = urlParams.get("admin") === "1";
+    const adminFromHash = hashParams.get("admin") === "1";
+
     setIsAdmin(adminFromSearch || adminFromHash);
   }, []);
-  
+
   return isAdmin;
 }
 
@@ -120,8 +122,8 @@ export default function Explore({ data, labels, palette }) {
       byCluster.get(row.clusterId).push(row);
     });
 
-    const selectedSet = isAdminMode 
-      ? new Set(adminSelections.map(item => item.index))
+    const selectedSet = isAdminMode
+      ? new Set(adminSelections.map((item) => item.index))
       : new Set(selectedPoints);
 
     return sortClusterIds(byCluster.keys()).map((clusterId) => {
@@ -187,7 +189,13 @@ export default function Explore({ data, labels, palette }) {
       }
       return trace;
     });
-  }, [filteredPoints, clusterMeta, selectedPoints, isAdminMode, adminSelections]);
+  }, [
+    filteredPoints,
+    clusterMeta,
+    selectedPoints,
+    isAdminMode,
+    adminSelections,
+  ]);
 
   const handleClusterToggle = (clusterId) => {
     setActiveClusters((prev) => {
@@ -206,25 +214,27 @@ export default function Explore({ data, labels, palette }) {
     if (!point || !Array.isArray(point.customdata)) return;
     const index = point.customdata[0];
     if (typeof index !== "number") return;
-    
+
     if (isAdminMode) {
       // Admin mode: add to admin selections (last 2 only)
       setAdminSelections((prev) => {
         const newSelections = [...prev];
-        const existingIndex = newSelections.findIndex(item => item.index === index);
-        
+        const existingIndex = newSelections.findIndex(
+          (item) => item.index === index
+        );
+
         if (existingIndex !== -1) {
           // Remove if already selected
           newSelections.splice(existingIndex, 1);
         } else {
           // Add new selection
-          const pointData = points.find(p => p.index === index);
+          const pointData = points.find((p) => p.index === index);
           if (pointData) {
             newSelections.push({
               index,
               ball: pointData.ball,
               thumb: pointData.thumb,
-              clusterId: pointData.clusterId
+              clusterId: pointData.clusterId,
             });
           }
           // Keep only last 2 selections
@@ -270,28 +280,29 @@ export default function Explore({ data, labels, palette }) {
   // Admin mode functions
   const handleAddCaseStudy = () => {
     if (adminSelections.length !== 2) return;
-    
+
     const [left, right] = adminSelections;
     const leftLabel = labels?.[left.clusterId] ?? `Cluster ${left.clusterId}`;
-    const rightLabel = labels?.[right.clusterId] ?? `Cluster ${right.clusterId}`;
-    
+    const rightLabel =
+      labels?.[right.clusterId] ?? `Cluster ${right.clusterId}`;
+
     const newCaseStudy = {
       title: `Comparison between ${left.ball} and ${right.ball}`,
       note: `Patches from ${leftLabel} and ${rightLabel} families - worth expert review?`,
       left: left.thumb,
-      right: right.thumb
+      right: right.thumb,
     };
-    
-    setCaseStudies(prev => [...prev, newCaseStudy]);
+
+    setCaseStudies((prev) => [...prev, newCaseStudy]);
   };
 
   const handleDownloadCaseStudies = () => {
     const dataStr = JSON.stringify(caseStudies, null, 2);
-    const dataBlob = new Blob([dataStr], { type: 'application/json' });
+    const dataBlob = new Blob([dataStr], { type: "application/json" });
     const url = URL.createObjectURL(dataBlob);
-    const link = document.createElement('a');
+    const link = document.createElement("a");
     link.href = url;
-    link.download = 'case_studies.json';
+    link.download = "case_studies.json";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -337,14 +348,21 @@ export default function Explore({ data, labels, palette }) {
     <section id="explore" className="section" data-tour="explore">
       <div className="section__inner explore">
         <div className="explore__header">
-          <h2>Explore the motif map {isAdminMode && <span className="admin-badge">ADMIN MODE</span>}</h2>
+          <h2>
+            Explore the motif map{" "}
+            {isAdminMode && <span className="admin-badge">ADMIN MODE</span>}
+          </h2>
           <p className="muted">
             Each dot is a small patch of carving. Colours = families of
             similar-looking patches. Hover for the ball that patch came from.
             {isAdminMode && " Click points to add them to the admin picker."}
           </p>
         </div>
-        <div className={`explore__layout ${isAdminMode ? 'explore__layout--admin' : ''}`}>
+        <div
+          className={`explore__layout ${
+            isAdminMode ? "explore__layout--admin" : ""
+          }`}
+        >
           <div className="explore__plot" role="presentation">
             {traces.length === 0 ? (
               <div className="status status--error">
@@ -482,19 +500,27 @@ export default function Explore({ data, labels, palette }) {
                 </div>
                 <div className="admin-panel__selections">
                   {adminSelections.length === 0 ? (
-                    <p className="muted">Click points to select them for case study creation.</p>
+                    <p className="muted">
+                      Click points to select them for case study creation.
+                    </p>
                   ) : (
                     <div className="admin-selections">
                       {adminSelections.map((selection, index) => (
                         <div key={selection.index} className="admin-selection">
-                          <img 
-                            src={selection.thumb} 
+                          <img
+                            src={selection.thumb}
                             alt={`Patch from ${selection.ball}`}
                             className="admin-selection__thumb"
                           />
                           <div className="admin-selection__info">
-                            <p><strong>Ball:</strong> {selection.ball}</p>
-                            <p><strong>Family:</strong> {labels?.[selection.clusterId] ?? `Cluster ${selection.clusterId}`}</p>
+                            <p>
+                              <strong>Ball:</strong> {selection.ball}
+                            </p>
+                            <p>
+                              <strong>Family:</strong>{" "}
+                              {labels?.[selection.clusterId] ??
+                                `Cluster ${selection.clusterId}`}
+                            </p>
                           </div>
                         </div>
                       ))}
