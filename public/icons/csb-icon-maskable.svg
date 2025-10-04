@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <!-- Maskable friendly version with safe padding -->
+  <defs>
+    <style>
+      .outline { fill: none; stroke: #000; stroke-width: 22; stroke-linecap: round; stroke-linejoin: round; }
+      .bg { fill: #ffffff; }
+    </style>
+  </defs>
+  <!-- Full-bleed background to allow mask clipping -->
+  <rect class="bg" x="0" y="0" width="1024" height="1024" rx="180" ry="180" />
+  <!-- Central circle (stone) -->
+  <circle cx="512" cy="520" r="400" class="outline" />
+  <!-- Top knob -->
+  <g transform="translate(0,-40)">
+    <rect x="472" y="140" width="80" height="70" rx="20" class="outline" />
+    <rect x="488" y="110" width="48" height="50" rx="16" class="outline" />
+  </g>
+  <!-- Spirals (scaled from original concept) -->
+  <g stroke="#000" fill="none" stroke-width="22" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Top -->
+    <path d="M512 250c-20-25-70-25-90 0-18 40 20 70 70 55 58-15 70-65 40-100-38-40-128-30-150 40-25 90 45 120 115 90 70-30 95-125 40-180" />
+    <!-- Left upper -->
+    <g transform="translate(300,370) rotate(-28) scale(1.1)">
+      <path d="M0 0c-15-15-50-15-65 0-18 32 12 55 45 45 40-10 50-45 30-70-20-25-75-20-90 25-18 55 25 75 65 55 45-20 62-85 30-120" />
+    </g>
+    <!-- Right upper -->
+    <g transform="translate(724,370) rotate(28) scale(1.1)">
+      <path d="M0 0c-15-15-50-15-65 0-18 32 12 55 45 45 40-10 50-45 30-70-20-25-75-20-90 25-18 55 25 75 65 55 45-20 62-85 30-120" />
+    </g>
+    <!-- Center large -->
+    <g transform="translate(512,540) scale(1.2)">
+      <path d="M0 0c-30-30-95-30-115 0-20 55 20 95 95 80 85-15 100-95 70-140-35-55-145-45-175 45-30 95 35 140 120 110 90-35 125-165 55-235-60-60-210-45-250 70-45 135 55 205 165 165 105-40 165-215 80-315" />
+    </g>
+    <!-- Left mid -->
+    <g transform="translate(250,540) rotate(-48)">
+      <path d="M0 0c-15-15-50-15-65 0-18 32 12 55 45 45 40-10 50-45 30-70-20-25-75-20-90 25-18 55 25 75 65 55" />
+    </g>
+    <!-- Right mid -->
+    <g transform="translate(774,540) rotate(48)">
+      <path d="M0 0c-15-15-50-15-65 0-18 32 12 55 45 45 40-10 50-45 30-70-20-25-75-20-90 25-18 55 25 75 65 55" />
+    </g>
+    <!-- Lower left -->
+    <g transform="translate(345,715) rotate(-62) scale(0.95)">
+      <path d="M0 0c-12-12-38-12-50 0-15 25 8 42 35 34 30-8 38-34 23-52-15-18-58-15-68 18-14 40 18 55 50 40" />
+    </g>
+    <!-- Lower right -->
+    <g transform="translate(679,715) rotate(62) scale(0.95)">
+      <path d="M0 0c-12-12-38-12-50 0-15 25 8 42 35 34 30-8 38-34 23-52-15-18-58-15-68 18-14 40 18 55 50 40" />
+    </g>
+    <!-- Bottom center -->
+    <g transform="translate(512,780) scale(1.05)">
+      <path d="M0 0c-15-15-50-15-65 0-18 32 12 55 45 45 40-10 50-45 30-70-20-25-75-20-90 25-18 55 25 75 65 55 45-20 62-85 30-120" />
+    </g>
+  </g>
+</svg>
