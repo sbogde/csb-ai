@@ -14,7 +14,29 @@ function sortClusterIds(ids) {
   });
 }
 
+// Check if admin mode is enabled via URL parameter
+function useAdminMode() {
+  const [isAdmin, setIsAdmin] = useState(false);
+  
+  useEffect(() => {
+    // Check both search params and hash params
+    const urlParams = new URLSearchParams(window.location.search);
+    const hashParams = new URLSearchParams(window.location.hash.split('?')[1] || '');
+    
+    const adminFromSearch = urlParams.get('admin') === '1';
+    const adminFromHash = hashParams.get('admin') === '1';
+    
+    setIsAdmin(adminFromSearch || adminFromHash);
+  }, []);
+  
+  return isAdmin;
+}
+
 export default function Explore({ data, labels, palette }) {
+  const isAdminMode = useAdminMode();
+  const [adminSelections, setAdminSelections] = useState([]);
+  const [caseStudies, setCaseStudies] = useState([]);
+
   const points = useMemo(() => {
     const rows = data?.points ?? [];
     return rows.map((row, index) => ({
@@ -98,7 +120,9 @@ export default function Explore({ data, labels, palette }) {
       byCluster.get(row.clusterId).push(row);
     });
 
-    const selectedSet = new Set(selectedPoints);
+    const selectedSet = isAdminMode 
+      ? new Set(adminSelections.map(item => item.index))
+      : new Set(selectedPoints);
 
     return sortClusterIds(byCluster.keys()).map((clusterId) => {
       const rows = byCluster.get(clusterId) ?? [];
@@ -163,7 +187,7 @@ export default function Explore({ data, labels, palette }) {
       }
       return trace;
     });
-  }, [filteredPoints, clusterMeta, selectedPoints]);
+  }, [filteredPoints, clusterMeta, selectedPoints, isAdminMode, adminSelections]);
 
   const handleClusterToggle = (clusterId) => {
     setActiveClusters((prev) => {
@@ -182,15 +206,46 @@ export default function Explore({ data, labels, palette }) {
     if (!point || !Array.isArray(point.customdata)) return;
     const index = point.customdata[0];
     if (typeof index !== "number") return;
-    setSelectedPoints((prev) => {
-      if (prev.includes(index)) {
-        return prev.filter((idx) => idx !== index);
-      }
-      if (prev.length === 2) {
-        return [prev[1], index];
-      }
-      return [...prev, index];
-    });
+    
+    if (isAdminMode) {
+      // Admin mode: add to admin selections (last 2 only)
+      setAdminSelections((prev) => {
+        const newSelections = [...prev];
+        const existingIndex = newSelections.findIndex(item => item.index === index);
+        
+        if (existingIndex !== -1) {
+          // Remove if already selected
+          newSelections.splice(existingIndex, 1);
+        } else {
+          // Add new selection
+          const pointData = points.find(p => p.index === index);
+          if (pointData) {
+            newSelections.push({
+              index,
+              ball: pointData.ball,
+              thumb: pointData.thumb,
+              clusterId: pointData.clusterId
+            });
+          }
+          // Keep only last 2 selections
+          if (newSelections.length > 2) {
+            newSelections.shift();
+          }
+        }
+        return newSelections;
+      });
+    } else {
+      // Normal mode: existing selection behavior
+      setSelectedPoints((prev) => {
+        if (prev.includes(index)) {
+          return prev.filter((idx) => idx !== index);
+        }
+        if (prev.length === 2) {
+          return [prev[1], index];
+        }
+        return [...prev, index];
+      });
+    }
   };
 
   const selectionDetails = useMemo(() => {
@@ -210,6 +265,41 @@ export default function Explore({ data, labels, palette }) {
 
   const handleUnhover = () => {
     setHoveredPoint(null);
+  };
+
+  // Admin mode functions
+  const handleAddCaseStudy = () => {
+    if (adminSelections.length !== 2) return;
+    
+    const [left, right] = adminSelections;
+    const leftLabel = labels?.[left.clusterId] ?? `Cluster ${left.clusterId}`;
+    const rightLabel = labels?.[right.clusterId] ?? `Cluster ${right.clusterId}`;
+    
+    const newCaseStudy = {
+      title: `Comparison between ${left.ball} and ${right.ball}`,
+      note: `Patches from ${leftLabel} and ${rightLabel} families - worth expert review?`,
+      left: left.thumb,
+      right: right.thumb
+    };
+    
+    setCaseStudies(prev => [...prev, newCaseStudy]);
+  };
+
+  const handleDownloadCaseStudies = () => {
+    const dataStr = JSON.stringify(caseStudies, null, 2);
+    const dataBlob = new Blob([dataStr], { type: 'application/json' });
+    const url = URL.createObjectURL(dataBlob);
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = 'case_studies.json';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    URL.revokeObjectURL(url);
+  };
+
+  const handleClearAdminSelections = () => {
+    setAdminSelections([]);
   };
 
   const layout = useMemo(
@@ -247,13 +337,14 @@ export default function Explore({ data, labels, palette }) {
     <section id="explore" className="section" data-tour="explore">
       <div className="section__inner explore">
         <div className="explore__header">
-          <h2>Explore the motif map</h2>
+          <h2>Explore the motif map {isAdminMode && <span className="admin-badge">ADMIN MODE</span>}</h2>
           <p className="muted">
             Each dot is a small patch of carving. Colours = families of
             similar-looking patches. Hover for the ball that patch came from.
+            {isAdminMode && " Click points to add them to the admin picker."}
           </p>
         </div>
-        <div className="explore__layout">
+        <div className={`explore__layout ${isAdminMode ? 'explore__layout--admin' : ''}`}>
           <div className="explore__plot" role="presentation">
             {traces.length === 0 ? (
               <div className="status status--error">
@@ -324,7 +415,7 @@ export default function Explore({ data, labels, palette }) {
                 ))}
               </select>
             </div>
-            {selectionDetails.length > 0 && (
+            {!isAdminMode && selectionDetails.length > 0 && (
               <div className="explore__compare">
                 <div className="explore__compare-header">
                   <h3>Compare</h3>
@@ -375,6 +466,65 @@ export default function Explore({ data, labels, palette }) {
               </div>
             )}
           </aside>
+          {isAdminMode && (
+            <aside className="explore__admin-panel" aria-label="Admin picker">
+              <div className="admin-panel">
+                <div className="admin-panel__header">
+                  <h3>Admin Picker</h3>
+                  <button
+                    type="button"
+                    className="btn btn--secondary btn--small"
+                    onClick={handleClearAdminSelections}
+                    aria-label="Clear admin selections"
+                  >
+                    Clear
+                  </button>
+                </div>
+                <div className="admin-panel__selections">
+                  {adminSelections.length === 0 ? (
+                    <p className="muted">Click points to select them for case study creation.</p>
+                  ) : (
+                    <div className="admin-selections">
+                      {adminSelections.map((selection, index) => (
+                        <div key={selection.index} className="admin-selection">
+                          <img 
+                            src={selection.thumb} 
+                            alt={`Patch from ${selection.ball}`}
+                            className="admin-selection__thumb"
+                          />
+                          <div className="admin-selection__info">
+                            <p><strong>Ball:</strong> {selection.ball}</p>
+                            <p><strong>Family:</strong> {labels?.[selection.clusterId] ?? `Cluster ${selection.clusterId}`}</p>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                </div>
+                {adminSelections.length === 2 && (
+                  <button
+                    type="button"
+                    className="btn btn--primary"
+                    onClick={handleAddCaseStudy}
+                  >
+                    Add as case study
+                  </button>
+                )}
+                {caseStudies.length > 0 && (
+                  <div className="admin-panel__export">
+                    <h4>Case Studies ({caseStudies.length})</h4>
+                    <button
+                      type="button"
+                      className="btn btn--primary"
+                      onClick={handleDownloadCaseStudies}
+                    >
+                      Download case_studies.json
+                    </button>
+                  </div>
+                )}
+              </div>
+            </aside>
+          )}
         </div>
       </div>
     </section>
