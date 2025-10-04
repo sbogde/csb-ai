@@ -60,14 +60,14 @@ function CompareCard({ selections, onReset, labels, base, points }) {
                   {point.thumb ? (
                     <img src={point.thumb} alt={`Patch from ${point.ball}`} />
                   ) : (
-                    <div className="thumb-placeholder" />
+                    <div className="thumb-placeholder">No thumb</div>
                   )}
                   <div className="meta">
                     <div className="family">{label}</div>
                     <div className="ball">Ball: {point.ball}</div>
                     <div className="file-link">
                       <a href={imgUrl} target="_blank" rel="noopener">
-                        Open image
+                        Open full image
                       </a>
                     </div>
                   </div>
