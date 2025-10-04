@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800">
+  <defs>
+    <style>
+      .stone-ball { fill: none; stroke: #000; stroke-width: 8; stroke-linecap: round; stroke-linejoin: round; }
+    </style>
+  </defs>
+  
+  <!-- Main sphere outline -->
+  <circle cx="400" cy="400" r="350" class="stone-ball"/>
+  
+  <!-- Top knob/handle -->
+  <rect x="375" y="30" width="50" height="40" rx="10" class="stone-ball"/>
+  <rect x="385" y="10" width="30" height="30" rx="8" class="stone-ball"/>
+  
+  <!-- Spiral motifs arranged around the sphere -->
+  
+  <!-- Center top spiral -->
+  <g transform="translate(400, 150)">
+    <path d="M 0,0 C -5,-5 -15,-5 -20,0 C -25,10 -15,20 0,15 C 20,10 25,-5 15,-15 C 0,-25 -25,-20 -30,0 C -35,30 -10,35 10,25 C 35,15 40,-15 25,-30 C 5,-45 -40,-35 -45,5" class="stone-ball"/>
+  </g>
+  
+  <!-- Left spiral -->
+  <g transform="translate(200, 250) rotate(-30)">
+    <path d="M 0,0 C -5,-5 -15,-5 -20,0 C -25,10 -15,20 0,15 C 20,10 25,-5 15,-15 C 0,-25 -25,-20 -30,0 C -35,30 -10,35 10,25 C 35,15 40,-15 25,-30" class="stone-ball"/>
+  </g>
+  
+  <!-- Right spiral -->
+  <g transform="translate(600, 250) rotate(30)">
+    <path d="M 0,0 C -5,-5 -15,-5 -20,0 C -25,10 -15,20 0,15 C 20,10 25,-5 15,-15 C 0,-25 -25,-20 -30,0 C -35,30 -10,35 10,25 C 35,15 40,-15 25,-30" class="stone-ball"/>
+  </g>
+  
+  <!-- Center large spiral -->
+  <g transform="translate(400, 400)">
+    <path d="M 0,0 C -8,-8 -25,-8 -30,0 C -35,15 -25,30 0,25 C 30,20 35,-8 25,-25 C 10,-42 -40,-35 -50,0 C -60,45 -15,55 20,40 C 60,25 70,-25 45,-55 C 15,-85 -75,-65 -90,10 C -105,90 -25,110 40,80" class="stone-ball"/>
+  </g>
+  
+  <!-- Bottom left spiral -->
+  <g transform="translate(250, 580) rotate(-45)">
+    <path d="M 0,0 C -5,-5 -15,-5 -20,0 C -25,10 -15,20 0,15 C 20,10 25,-5 15,-15 C 0,-25 -25,-20 -30,0 C -35,30 -10,35 10,25" class="stone-ball"/>
+  </g>
+  
+  <!-- Bottom right spiral -->
+  <g transform="translate(550, 580) rotate(45)">
+    <path d="M 0,0 C -5,-5 -15,-5 -20,0 C -25,10 -15,20 0,15 C 20,10 25,-5 15,-15 C 0,-25 -25,-20 -30,0 C -35,30 -10,35 10,25" class="stone-ball"/>
+  </g>
+  
+  <!-- Left middle spiral -->
+  <g transform="translate(150, 450) rotate(-60)">
+    <path d="M 0,0 C -4,-4 -12,-4 -15,0 C -18,8 -12,15 0,12 C 15,9 18,-4 12,-12 C 6,-20 -18,-15 -22,0 C -26,20 -8,25 8,18" class="stone-ball"/>
+  </g>
+  
+  <!-- Right middle spiral -->
+  <g transform="translate(650, 450) rotate(60)">
+    <path d="M 0,0 C -4,-4 -12,-4 -15,0 C -18,8 -12,15 0,12 C 15,9 18,-4 12,-12 C 6,-20 -18,-15 -22,0 C -26,20 -8,25 8,18" class="stone-ball"/>
+  </g>
+  
+  <!-- Bottom center spiral -->
+  <g transform="translate(400, 650)">
+    <path d="M 0,0 C -5,-5 -15,-5 -20,0 C -25,10 -15,20 0,15 C 20,10 25,-5 15,-15 C 0,-25 -25,-20 -30,0 C -35,30 -10,35 10,25 C 35,15 40,-15 25,-30" class="stone-ball"/>
+  </g>
+</svg>
