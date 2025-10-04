@@ -543,12 +543,154 @@ dd {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto;
   }
-
+  
   .explore__admin-panel {
     order: 3;
   }
-
+  
   .explore__sidebar {
     order: 2;
   }
+}
+
+/* Tip pill styling */
+.tip-pill {
+  display: inline-block;
+  background: #f1f5f9;
+  color: #64748b;
+  padding: 4px 12px;
+  border-radius: 16px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  margin-top: 8px;
+  border: 1px solid #e2e8f0;
+}
+
+/* Compare Card Styling */
+.compare-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 6px 24px rgba(0,0,0,.06);
+  padding: 16px;
+  border: 1px solid #e2e8f0;
+}
+
+.compare-card h3 {
+  margin: 0 0 12px 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.compare-slots {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.slot {
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 12px;
+  background: #fafafa;
+}
+
+.slot-title {
+  font-size: 12px;
+  font-weight: 600;
+  color: #6b7280;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.slot-body {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.slot-body img,
+.thumb-placeholder {
+  width: 72px;
+  height: 72px;
+  border-radius: 10px;
+  background: #f3f4f6;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.thumb-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #9ca3af;
+  font-size: 12px;
+}
+
+.meta {
+  flex: 1;
+  min-width: 0;
+}
+
+.meta .family {
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 2px;
+  font-size: 14px;
+}
+
+.meta .ball,
+.meta .file-link {
+  font-size: 12px;
+  color: #374151;
+  margin-bottom: 2px;
+}
+
+.meta .file-link a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.meta .file-link a:hover {
+  text-decoration: underline;
+}
+
+.slot-empty {
+  font-size: 14px;
+  color: #6b7280;
+  text-align: center;
+  padding: 20px 10px;
+  font-style: italic;
+}
+
+.compare-actions {
+  margin-top: 12px;
+  display: flex;
+  gap: 8px;
+}
+
+.btn-secondary {
+  background: #f3f4f6;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #374151;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-secondary:hover {
+  background: #e5e7eb;
+  border-color: #d1d5db;
+}
+
+.hint {
+  margin-top: 8px;
+  font-size: 12px;
+  color: #6b7280;
+  margin-bottom: 0;
 }
