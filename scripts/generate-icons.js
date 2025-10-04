@@ -13,17 +13,18 @@ const root = path.resolve(
 const publicDir = path.join(root, "public");
 const iconsDir = path.join(publicDir, "icons");
 
-const sourceSvg = path.join(iconsDir, "csb-icon.svg");
-const maskableSvg = path.join(iconsDir, "csb-icon-maskable.svg");
+const sourceSvg = path.join(iconsDir, "stone-ball-simple.svg");
+const maskableSvg = path.join(iconsDir, "stone-ball-simple-maskable.svg");
 
 if (!fs.existsSync(sourceSvg)) {
   console.error("Missing source SVG:", sourceSvg);
   process.exit(1);
 }
 
+// Create maskable version if it doesn't exist
 if (!fs.existsSync(maskableSvg)) {
-  console.error("Missing maskable SVG:", maskableSvg);
-  process.exit(1);
+  console.log("Creating maskable version...");
+  fs.copyFileSync(sourceSvg, maskableSvg);
 }
 
 const sizes = [48, 72, 96, 144, 192, 256, 384, 512];

@@ -24,20 +24,7 @@ export default defineConfig({
         scope: "/",
         start_url: "/",
         icons: [
-          // SVG source (some platforms will use this directly)
-          {
-            src: "icons/csb-icon.svg",
-            type: "image/svg+xml",
-            sizes: "512x512",
-            purpose: "any",
-          },
-          {
-            src: "icons/csb-icon-maskable.svg",
-            type: "image/svg+xml",
-            sizes: "1024x1024",
-            purpose: "maskable",
-          },
-          // Raster fallbacks
+          // Standard icons
           { src: "icons/icon-48x48.png", sizes: "48x48", type: "image/png" },
           { src: "icons/icon-72x72.png", sizes: "72x72", type: "image/png" },
           { src: "icons/icon-96x96.png", sizes: "96x96", type: "image/png" },
@@ -66,45 +53,10 @@ export default defineConfig({
             sizes: "512x512",
             type: "image/png",
           },
-          {
-            src: "icons/icon-48x48-maskable.png",
-            sizes: "48x48",
-            type: "image/png",
-            purpose: "maskable",
-          },
-          {
-            src: "icons/icon-72x72-maskable.png",
-            sizes: "72x72",
-            type: "image/png",
-            purpose: "maskable",
-          },
-          {
-            src: "icons/icon-96x96-maskable.png",
-            sizes: "96x96",
-            type: "image/png",
-            purpose: "maskable",
-          },
-          {
-            src: "icons/icon-144x144-maskable.png",
-            sizes: "144x144",
-            type: "image/png",
-            purpose: "maskable",
-          },
+          // Maskable icons for better platform integration
           {
             src: "icons/icon-192x192-maskable.png",
             sizes: "192x192",
-            type: "image/png",
-            purpose: "maskable",
-          },
-          {
-            src: "icons/icon-256x256-maskable.png",
-            sizes: "256x256",
-            type: "image/png",
-            purpose: "maskable",
-          },
-          {
-            src: "icons/icon-384x384-maskable.png",
-            sizes: "384x384",
             type: "image/png",
             purpose: "maskable",
           },

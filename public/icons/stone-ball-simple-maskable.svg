@@ -1,0 +1,13 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<!-- Maskable version with safe zone padding -->
+<rect width="512" height="512" fill="#1976d2"/>
+<g transform="translate(64,64) scale(0.75)">
+<circle cx="256" cy="256" r="240" fill="#fff" stroke="#000" stroke-width="16"/>
+<path d="M256 256c0 44.183-35.817 80-80 80s-80-35.817-80-80 35.817-80 80-80 80 35.817 80 80z" stroke="#000" stroke-width="16" fill="none"/>
+<path d="M256 256c0-44.183 35.817-80 80-80s80 35.817 80 80-35.817 80-80 80-80-35.817-80-80z" stroke="#000" stroke-width="16" fill="none"/>
+<path d="M256 176c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z" stroke="#000" stroke-width="16" fill="none"/>
+<path d="M256 336c-44.183 0-80 35.817-80 80s35.817 80 80 80 80-35.817 80-80-35.817-80-80-80z" stroke="#000" stroke-width="16" fill="none"/>
+<path d="M176 256c-44.183 0-80-35.817-80-80s35.817-80 80-80" stroke="#000" stroke-width="16" fill="none"/>
+<path d="M336 256c44.183 0 80 35.817 80 80s-35.817 80-80 80" stroke="#000" stroke-width="16" fill="none"/>
+</g>
+</svg>
