@@ -37,19 +37,24 @@ function useAdminMode() {
 // CompareCard component for always-visible compare panel
 function CompareCard({ selections, onReset, labels, base, points }) {
   const slots = [selections[0], selections[1]];
-  
+
   return (
     <div className="compare-card" aria-label="Compare selections" tabIndex={0}>
       <h3>Compare</h3>
       <div className="compare-slots">
         {slots.map((pointIndex, i) => {
-          const point = pointIndex !== undefined ? points.find(p => p.index === pointIndex) : null;
-          const label = point ? (labels[point.clusterId] ?? `Cluster ${point.clusterId}`) : null;
+          const point =
+            pointIndex !== undefined
+              ? points.find((p) => p.index === pointIndex)
+              : null;
+          const label = point
+            ? labels[point.clusterId] ?? `Cluster ${point.clusterId}`
+            : null;
           const imgUrl = point ? `${base}images/${point.ball}` : null;
-          
+
           return (
             <div key={i} className="slot" aria-live="polite">
-              <div className="slot-title">Slot {i ? 'B' : 'A'}</div>
+              <div className="slot-title">Slot {i ? "B" : "A"}</div>
               {point ? (
                 <div className="slot-body">
                   {point.thumb ? (
@@ -75,7 +80,11 @@ function CompareCard({ selections, onReset, labels, base, points }) {
         })}
       </div>
       <div className="compare-actions">
-        <button onClick={onReset} className="btn-secondary" aria-label="Reset comparison">
+        <button
+          onClick={onReset}
+          className="btn-secondary"
+          aria-label="Reset comparison"
+        >
           Reset selection
         </button>
       </div>
@@ -88,7 +97,7 @@ export default function Explore({ data, labels, palette }) {
   const isAdminMode = useAdminMode();
   const [adminSelections, setAdminSelections] = useState([]);
   const [caseStudies, setCaseStudies] = useState([]);
-  const base = import.meta.env.BASE_URL || '/';
+  const base = import.meta.env.BASE_URL || "/";
 
   const points = useMemo(() => {
     const rows = data?.points ?? [];
@@ -159,12 +168,12 @@ export default function Explore({ data, labels, palette }) {
   // Keyboard accessibility - clear selection on Escape
   useEffect(() => {
     const handleKeyDown = (event) => {
-      if (event.key === 'Escape') {
+      if (event.key === "Escape") {
         setSelectedPoints([]);
       }
     };
-    document.addEventListener('keydown', handleKeyDown);
-    return () => document.removeEventListener('keydown', handleKeyDown);
+    document.addEventListener("keydown", handleKeyDown);
+    return () => document.removeEventListener("keydown", handleKeyDown);
   }, []);
 
   const clusterMeta = useMemo(() => {
@@ -417,11 +426,15 @@ export default function Explore({ data, labels, palette }) {
             {isAdminMode && <span className="admin-badge">ADMIN MODE</span>}
           </h2>
           <p className="muted">
-            Each dot is a tiny patch of carving. Colours show families of look-alike patches. Click any dot to add it to Compare (up to two). Hover to see which ball it came from.
-            {isAdminMode && " Admin mode: Click points to add them to the admin picker."}
+            Each dot is a tiny patch of carving. Colours show families of
+            look-alike patches. Click any dot to add it to Compare (up to two).
+            Hover to see which ball it came from.
+            {isAdminMode &&
+              " Admin mode: Click points to add them to the admin picker."}
           </p>
           <div className="tip-pill">
-            Tip: click another dot to compare side-by-side. Click again to remove.
+            Tip: click another dot to compare side-by-side. Click again to
+            remove.
           </div>
         </div>
         <div
@@ -499,10 +512,10 @@ export default function Explore({ data, labels, palette }) {
                 ))}
               </select>
             </div>
-            
+
             {/* Always visible Compare panel */}
             <div className="explore__control">
-              <CompareCard 
+              <CompareCard
                 selections={selectedPoints}
                 onReset={() => setSelectedPoints([])}
                 labels={labels}
@@ -510,7 +523,7 @@ export default function Explore({ data, labels, palette }) {
                 points={points}
               />
             </div>
-            
+
             {!isAdminMode && selectionDetails.length > 0 && (
               <div className="explore__compare">
                 <div className="explore__compare-header">

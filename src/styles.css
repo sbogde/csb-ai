@@ -543,11 +543,11 @@ dd {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto;
   }
-  
+
   .explore__admin-panel {
     order: 3;
   }
-  
+
   .explore__sidebar {
     order: 2;
   }
@@ -570,7 +570,7 @@ dd {
 .compare-card {
   background: #fff;
   border-radius: 16px;
-  box-shadow: 0 6px 24px rgba(0,0,0,.06);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.06);
   padding: 16px;
   border: 1px solid #e2e8f0;
 }
