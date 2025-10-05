@@ -233,17 +233,6 @@ export default function Explore({ data, labels, palette }) {
     setSelectedPoints((prev) => prev.filter((idx) => visibleIndices.has(idx)));
   }, [visibleIndices]);
 
-  // Keyboard accessibility - clear selection on Escape
-  useEffect(() => {
-    const handleKeyDown = (event) => {
-      if (event.key === "Escape") {
-        setSelectedPoints([]);
-      }
-    };
-    document.addEventListener("keydown", handleKeyDown);
-    return () => document.removeEventListener("keydown", handleKeyDown);
-  }, []);
-
   const clusterMeta = useMemo(() => {
     return clusterIds.map((clusterId) => ({
       id: clusterId,
