@@ -38,19 +38,19 @@ function useAdminMode() {
 function ImageModal({ isOpen, onClose, imageSrc, imageAlt, ballName }) {
   useEffect(() => {
     const handleEscape = (event) => {
-      if (event.key === 'Escape') {
+      if (event.key === "Escape") {
         onClose();
       }
     };
-    
+
     if (isOpen) {
-      document.addEventListener('keydown', handleEscape);
-      document.body.style.overflow = 'hidden';
+      document.addEventListener("keydown", handleEscape);
+      document.body.style.overflow = "hidden";
     }
-    
+
     return () => {
-      document.removeEventListener('keydown', handleEscape);
-      document.body.style.overflow = 'unset';
+      document.removeEventListener("keydown", handleEscape);
+      document.body.style.overflow = "unset";
     };
   }, [isOpen, onClose]);
 
@@ -61,7 +61,11 @@ function ImageModal({ isOpen, onClose, imageSrc, imageAlt, ballName }) {
       <div className="modal-content" onClick={(e) => e.stopPropagation()}>
         <div className="modal-header">
           <h3>{ballName}</h3>
-          <button className="modal-close" onClick={onClose} aria-label="Close modal">
+          <button
+            className="modal-close"
+            onClick={onClose}
+            aria-label="Close modal"
+          >
             ×
           </button>
         </div>
@@ -82,13 +86,17 @@ function CompareCard({ selections, onReset, labels, base, points }) {
     setModalImage({
       src: `${base}images/${point.ball}`,
       alt: `Full image of ${point.ball}`,
-      ballName: point.ball
+      ballName: point.ball,
     });
   };
 
   return (
     <>
-      <div className="compare-card" aria-label="Compare selections" tabIndex={0}>
+      <div
+        className="compare-card"
+        aria-label="Compare selections"
+        tabIndex={0}
+      >
         <h3>Compare</h3>
         <div className="compare-slots">
           {slots.map((pointIndex, i) => {
@@ -114,7 +122,7 @@ function CompareCard({ selections, onReset, labels, base, points }) {
                       <div className="family">{label}</div>
                       <div className="ball">Ball: {point.ball}</div>
                       <div className="file-link">
-                        <button 
+                        <button
                           className="image-link-btn"
                           onClick={() => handleImageClick(point)}
                         >
@@ -141,7 +149,7 @@ function CompareCard({ selections, onReset, labels, base, points }) {
         </div>
         <p className="hint">Tip: Click a dot to add/remove. Max two items.</p>
       </div>
-      
+
       <ImageModal
         isOpen={!!modalImage}
         onClose={() => setModalImage(null)}
