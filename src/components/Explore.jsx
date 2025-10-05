@@ -34,62 +34,122 @@ function useAdminMode() {
   return isAdmin;
 }
 
+// ImageModal component for displaying full images
+function ImageModal({ isOpen, onClose, imageSrc, imageAlt, ballName }) {
+  useEffect(() => {
+    const handleEscape = (event) => {
+      if (event.key === 'Escape') {
+        onClose();
+      }
+    };
+    
+    if (isOpen) {
+      document.addEventListener('keydown', handleEscape);
+      document.body.style.overflow = 'hidden';
+    }
+    
+    return () => {
+      document.removeEventListener('keydown', handleEscape);
+      document.body.style.overflow = 'unset';
+    };
+  }, [isOpen, onClose]);
+
+  if (!isOpen) return null;
+
+  return (
+    <div className="modal-overlay" onClick={onClose}>
+      <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+        <div className="modal-header">
+          <h3>{ballName}</h3>
+          <button className="modal-close" onClick={onClose} aria-label="Close modal">
+            ×
+          </button>
+        </div>
+        <div className="modal-body">
+          <img src={imageSrc} alt={imageAlt} className="modal-image" />
+        </div>
+      </div>
+    </div>
+  );
+}
+
 // CompareCard component for always-visible compare panel
 function CompareCard({ selections, onReset, labels, base, points }) {
   const slots = [selections[0], selections[1]];
+  const [modalImage, setModalImage] = useState(null);
+
+  const handleImageClick = (point) => {
+    setModalImage({
+      src: `${base}images/${point.ball}`,
+      alt: `Full image of ${point.ball}`,
+      ballName: point.ball
+    });
+  };
 
   return (
-    <div className="compare-card" aria-label="Compare selections" tabIndex={0}>
-      <h3>Compare</h3>
-      <div className="compare-slots">
-        {slots.map((pointIndex, i) => {
-          const point =
-            pointIndex !== undefined
-              ? points.find((p) => p.index === pointIndex)
+    <>
+      <div className="compare-card" aria-label="Compare selections" tabIndex={0}>
+        <h3>Compare</h3>
+        <div className="compare-slots">
+          {slots.map((pointIndex, i) => {
+            const point =
+              pointIndex !== undefined
+                ? points.find((p) => p.index === pointIndex)
+                : null;
+            const label = point
+              ? labels[point.clusterId] ?? `Cluster ${point.clusterId}`
               : null;
-          const label = point
-            ? labels[point.clusterId] ?? `Cluster ${point.clusterId}`
-            : null;
-          const imgUrl = point ? `${base}images/${point.ball}` : null;
 
-          return (
-            <div key={i} className="slot" aria-live="polite">
-              <div className="slot-title">Slot {i ? "B" : "A"}</div>
-              {point ? (
-                <div className="slot-body">
-                  {point.thumb ? (
-                    <img src={point.thumb} alt={`Patch from ${point.ball}`} />
-                  ) : (
-                    <div className="thumb-placeholder">No thumb</div>
-                  )}
-                  <div className="meta">
-                    <div className="family">{label}</div>
-                    <div className="ball">Ball: {point.ball}</div>
-                    <div className="file-link">
-                      <a href={imgUrl} target="_blank" rel="noopener">
-                        Open full image
-                      </a>
+            return (
+              <div key={i} className="slot" aria-live="polite">
+                <div className="slot-title">Slot {i ? "B" : "A"}</div>
+                {point ? (
+                  <div className="slot-body">
+                    {point.thumb ? (
+                      <img src={point.thumb} alt={`Patch from ${point.ball}`} />
+                    ) : (
+                      <div className="thumb-placeholder">No thumb</div>
+                    )}
+                    <div className="meta">
+                      <div className="family">{label}</div>
+                      <div className="ball">Ball: {point.ball}</div>
+                      <div className="file-link">
+                        <button 
+                          className="image-link-btn"
+                          onClick={() => handleImageClick(point)}
+                        >
+                          View full image
+                        </button>
+                      </div>
                     </div>
                   </div>
-                </div>
-              ) : (
-                <div className="slot-empty">Click any dot to add here</div>
-              )}
-            </div>
-          );
-        })}
+                ) : (
+                  <div className="slot-empty">Click any dot to add here</div>
+                )}
+              </div>
+            );
+          })}
+        </div>
+        <div className="compare-actions">
+          <button
+            onClick={onReset}
+            className="btn-secondary"
+            aria-label="Reset comparison"
+          >
+            Reset selection
+          </button>
+        </div>
+        <p className="hint">Tip: Click a dot to add/remove. Max two items.</p>
       </div>
-      <div className="compare-actions">
-        <button
-          onClick={onReset}
-          className="btn-secondary"
-          aria-label="Reset comparison"
-        >
-          Reset selection
-        </button>
-      </div>
-      <p className="hint">Tip: Click a dot to add/remove. Max two items.</p>
-    </div>
+      
+      <ImageModal
+        isOpen={!!modalImage}
+        onClose={() => setModalImage(null)}
+        imageSrc={modalImage?.src}
+        imageAlt={modalImage?.alt}
+        ballName={modalImage?.ballName}
+      />
+    </>
   );
 }
 
