@@ -592,7 +592,7 @@ export default function Explore({ data, labels, palette }) {
               />
             </div>
 
-            {!isAdminMode && selectionDetails.length > 0 && (
+            {!isAdminMode && 1 === 0 && selectionDetails.length > 0 && (
               <div className="explore__compare">
                 <div className="explore__compare-header">
                   <h3>Selection Details</h3>
