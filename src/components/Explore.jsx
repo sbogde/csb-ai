@@ -58,9 +58,15 @@ function ImageModal({ isOpen, onClose, imageSrc, imageAlt, ballName }) {
 
   return (
     <div className="modal-overlay" onClick={onClose}>
-      <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+      <div
+        className="modal-content"
+        onClick={(e) => e.stopPropagation()}
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modal-title"
+      >
         <div className="modal-header">
-          <h3>{ballName}</h3>
+          <h3 id="modal-title">{ballName}</h3>
           <button
             className="modal-close"
             onClick={onClose}
